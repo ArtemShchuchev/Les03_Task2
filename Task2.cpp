@@ -26,7 +26,7 @@ public:
 
 bool yesOrNo(); // 1 - да; 0 - нет
 Operand oper();
-int userInput(const std::string); // будет запрашивать у пользователя ввод данных
+int userInput(const std::string&); // будет запрашивать у пользователя ввод данных
 
 int main(int argc, char** argv)
 {
@@ -154,7 +154,7 @@ Operand oper()
 // В случае успеха, вернет int.
 // При ошибке ввода, сбросит и очистит cin
 // и снова попросит ввести данные
-int userInput(const std::string userText)
+int userInput(const std::string& userText)
 {
     double uData = 0;
     bool err = true;
